@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 5:- Size, Position & Lists</title>
+</head>
+<link rel="stylesheet" href="./Topic 5 (CSS).css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+<body>
+    <div class="Heading">
+        <h2><u>Chapter 5 - Size, Position & Lists</u></h2>
+        <ul type="square">
+            <li>
+                <p>A Responsive Website gives great user experience on any device. <b>Ex: iPad, iPhone, Android,
+                        etc.</b>
+                </p>
+            </li>
+            <li>There are more units for describing size other than <b>px</b>, like <b><u>vh, vw, em, rem, %,
+                        etc.</u></b>
+            </li>
+            <p><b>What's wrong with pixels?</b>
+                These units are relative to the other length property. Following are some of the most commonly used
+                relative lengths.</p>
+        </ul>
+    </div>
+    <div class="types">
+        <ul type="disk">
+            <li><b>Relative lengths:</b> These units are relative to the other property.</li>
+            <li>Following are some of the most commonly used relative lengths:</li>
+            <ul>
+                <li><b>em:</b> unit relative to the parent font size.</li>
+                <li><b>rem:</b> unit relative to the root font size.</li>
+                <li><b>vw:</b> unit relative to 1% viewport width.</li>
+                <li><b>vh:</b> unit relative to 1% viewport height.</li>
+                <li><b>%:</b> unit relative to parent element.</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="height">
+        <h4><u>
+                <center>Min/Max Height & Width</center>
+            </u></h4>
+        <ul type="square">
+            <li>If the content is smaller (e.g., your height and width are already set as 4px, vh, or vw), then if you
+                set
+                min-width as 50px, the <b>height and width will not change to 4px; it will remain at 50px by
+                    default.</b></li>
+            <li>If you set the width and height as 5px, vh, or vw, and max-width as 50px, then <b>the width and height
+                    will
+                    be
+                    by default as 5px,</b> but if you choose <b>height and width as 100px or vw, then it will remain at
+                    50px by default.</b></li>
+        </ul>
+    </div>
+    <div class="Position">
+        <h3>
+            <center>The Position Property</center>
+        </h3>
+        <ul type="square">
+            Used to manulipate the location of an element Following are the possible values.
+            <p>
+                <li><b>Static:-</b>The default position <b><u>(Top/bottom/left/Right/Z-index has no effect).</u></b>
+                </li>
+            </p>
+            <p>
+                <li><b>Relative:-</b><b><u>(The top/bottom/left/right/z-index will now work).</b></u>otherwise the
+                    element is in the flow of document like static.</li>
+            </p>
+            <p>
+                <li><b>Absolute:-</b>The Element is removed from the flow & is relativity positioned to its first
+                    non-static ancestor. <b><u>top/bottom works.</u></b>
+            </p>
+            </li>
+            <p>
+                <li><b>Fixed:-</b>just like absolute except the element is positioned relative to <b><u>browser
+                            window.</u></b>
+            </p>
+            </li>
+            <p>
+                <li><b>Sticky:-</b>The element is positioned based on <b>user scroll position.</b></li>
+            </p>
+            <p><b>Z-index defines which layer will be above which in case is of overlapping elements.</b></p>
+        </ul>
+    </div>
+<div class="proceed">
+    <button><a href="http://192.168.29.215:3000/Topic%204%20(CSS).html" target="_blank">Previous Topic</a></button>
+    <div class="backward">
+        <button><a href="http://192.168.29.215:3000/Topic%206%20(CSS).html" target="_blank">Next Topic</a></button>
+    </div>
+</div>
+</body>
+
+</html>

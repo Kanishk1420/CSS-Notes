@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 7 :- CSS Grid & Media Queries</title>
+</head>
+<link rel="stylesheet" href="./Topic 7 (CSS).css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<body>
+    <nav>
+        <video autoplay loop muted plays-inline-class="background-clip">
+           <source src="./Images/Dark Souls III Edit. (4k 60FPS Ultra HD).mp4" type="video/mp4">
+        </video>
+        <h2><u class="heading">Topic 7 :- CSS Grid & Media Queries</u></h2>
+        <div class="Heading">
+            <ul type="disk">
+                <li>
+                    <p> A CSS Grid can be initalized using: <br><b>
+                        .container{ 
+                            display:Grid;   
+                        }
+                        </b><br>
+                        All direct Children Automically becomes grid items.
+                    </p>
+                </li>
+                <li>
+                    <p><b><u>The Grid-Column-gap property</u>:-</b> Used to adjust the space between the columns of a CSS grid.</p>
+                </li>
+                <li><p><b><u>The-Grid-row-gap property</u>:-</b> Used to adjust the spaced between the rows of a CSS grid.</p>
+                </li>
+                <li>
+                    <p><b><u>The Grid-Gap</u>:-</b> Shorthand property of Grid-Row-gap & Grid-Column-gap.</p>
+                    <b>Grid-gap:- 40px,20px.</b>
+                </li>
+                <li>
+                    <p><b>By Grid-Templete-Columns</b> you can adjust how much you want space in your particular Column by selecting auto it will automically adjust how much size it needed.</p>
+                </li>
+                <li>
+                    <p><b><u>Note</u>:- For a Single value of Grid-gap both row and column gaps can be set in one value.</b></p>
+                </li>
+                <li>
+                    <p>The Grid-Templete-Columns property can be used too specify the width of Columns.</p> 
+                </li>
+                <li>
+                    <p>The Grid-Templete-Rows property can be used to specify the height of each Row.</p>
+                </li>     
+            </ul>
+        </div>
+        <h3 class="Rules"><u>Properties of Grid</u></h3>
+        <div class="rules">
+            <h4><u>Properties of Grid Container</u></h4>
+            <ul type="square">
+                <li><p><b>The Justify-Content Property is used to align the whole grid inside the Container.</b></p></li>
+                <li><p><b>The Align-Content Property is used to vertically align the whole grid inside the Container.</b></p></li>
+            </ul>
+            <h4><u>Properties of Grid Items.</u></h4>
+            <ul type="square">
+                <li><p><b>The Grid-Column Property defines how many Columns an item will Span.</b></p></li>
+                ex:- grid-column: 1/5 <b>{it will take 5 columns spaces.}</b>
+                <li><p><b>The Grid-Row Property defines how many Rows an item will Span.</b></p></li>
+            </ul>
+        </div>
+        <h3 class="Media"><u>CSS Media Queries</u></h3>
+        <div class="media">
+            <ul type="circle">
+            <li><p>CSS Media Queries is used to when certain condition you want true like ex:-</p></li>
+            <li><b>@media only screen and (max-width: 800px){<br>
+              body{
+                background:red
+              }
+            }</li>
+            </b>
+            <li><p>CSS Media Queries is mostly used when you want to create Responsive Website.</p></li>
+        </ul>
+        </div>
+        <div class="proceed">
+            <button><a href="http://192.168.29.215:3000/Topic%206%20(CSS).html" target="_blank">Previous Topic</a></button>
+            <div class="backward">
+                <button><a href="http://192.168.29.215:3000/Topic%208%20(CSS).html" target="_blank">Next Topic</a></button>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

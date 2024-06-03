@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 1:- First CSS Line</title>
+</head>
+
+<body>
+    <div class="container">
+        <style>
+            body {
+                background-color: rgb(247, 149, 149);
+            }
+        </style>
+        <h2><u>Topic 1:- Introduction to CSS</u></h2>
+        <ul type="square">
+            <li>
+                <p>HTML is just an skeletal layout of a website,Only layout</p>
+            </li>
+            <li>
+                <p>we need Css to design a website, add styles to it and make it look beautiful.</p>
+            </li>
+            <b>CSS :- Cascading style sheet </b>
+            <li>
+                <p>CSS is optional but it converts an off looking HTML page into a beautiful & resposive website.</p>
+            </li>
+            <b>WHY CSS? </b>
+            <li>
+                <p>CSS Is a very demanded skill in the world of web development. If you are successfully able to master
+                    CSS you can customize your website as per your liking.
+                    CSS is best for firefox</p>
+            </li>
+            <li>
+                <p>Create a .css file inside your directory and add it to your HTML add the follwoing line to your CSS
+                </p>
+            </li>
+            <li> [style] </li>
+            <li> body { </li>
+            <li>background-color : red </li>
+            <li>}</li>
+            <li>[style]</li>
+        </ul>
+        <h3><u>Topic 1.1 Creating first CSS website</u></h3>
+        <ul type="square">
+            <li>
+                <p>DOM stands for document object model when a page is loaded the browser creates a DOM of the page
+                    which is
+                    constructed as a tree of objects ex:- Binary tree </p>
+            </li>
+            <h4><b>HTML id and class attributes</b></h4>
+            <li>
+                <p>When an HTML element is given an id, it serves as a unique identifier for that element</p>
+            </li>
+            <li>
+                <p>On the other hand when an HTML element is given a class, it now belongs to that class. More than one
+                    elements can belong to a single class but </p>
+            </li>
+            <li>
+                <p><b>Every element must have an unique id</b></p>
+            </li>
+            <!----- first method to add styling ----->
+            <style>
+                #first {
+                    background-color: rgb(155, 255, 222);
+                    color: black;
+                }
+
+                /* the particular div got coloured */
+                #second {
+                    background-color: rgb(155, 168, 255);
+                    color: black;
+                }
+
+                .red {
+                    background-color: rgb(227, 130, 156);
+                    color: black;
+                    /* for class type . */
+                    /* avoid further css codes */
+                }
+                .proceed{
+                    position: relative;
+                    right: 40px;
+                    display: flex;
+                    justify-content: center;
+                }
+                button {
+                    background: rgb(220, 37, 5);
+                    padding: 12px 22px;
+                    border-radius: 50px;
+                    border: none;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 20px;
+                    transition: box-shadow 0.5s ease;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(238, 234, 243);
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                button:hover{
+                    background: rgb(194, 33, 5);
+                    text-decoration: underline;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+                }
+            </style>
+            <div id="first">
+                <li>First</li>
+                <!-- unique id -->
+            </div>
+            <div id="second">
+                <li>Second </li>
+                <!-- unique id cannot be same  -->
+            </div>
+            <section class="red">
+                <li>Marron</li>
+            </section>
+            <li>
+                <p>
+                    < div id="first" class="c1,c2,c3" div>
+                </p>
+            </li>
+            <li>
+                <p> Here <b>First</b> is unique id and <b>c1,c2,c3</b> are multiple classes followed by spaces</p>
+            </li>
+            <li><b>Three ways to add CSS to HTML:-</b></li>
+        </ul>
+        <ol type="1">
+            <li>
+                <p>Style Tag </p>
+            </li>
+            <li>
+                <p>Inline CSS</p>
+            </li>
+            <li>
+                <p>External CSS</p>
+            </li>
+        </ol>
+        <ul type="square">
+            <!---- Second method to add styling ---->
+            <div id="third" style="background-color: rgb(112, 239, 83);">
+                <li>third</li>
+            </div>
+            <div id="fourth" style="background-color: rgb(0, 247, 255);">
+                <li>fourth</li>
+            </div>
+            <section class="blue" style="background-color: rgb(229, 14, 57);">
+                <li>Red</li>
+            </section>
+        </ul>
+        <h3><u>Topic 1.2- CSS Selectors</u></h3>
+        <style>
+            h4 {
+                color: rgb(142, 29, 248);
+            }
+        </style>
+        <ul type="circle">
+            <div>
+                <h4>
+                    <li>As you can see my topic got coloured.</li>
+                </h4>
+                <li>
+                    <p>A CSS Selector is used to select an HTML Element(s) for styling</p>
+                </li>
+                <li>Body - selector</li>
+                <li>{ colour,background} - Decelaration.</li>
+                <h4>
+                    <li>This also covered with same colour</li>
+                </h4>
+                <li>
+                    <p>An Element Selector is used to select an element with a given id ex:- #first{}</p>
+                </li>
+                <li>
+                    <p>Class Selector is used to select an element with a given class.</p>
+                </li>
+                <style>
+                    .blue,
+                    h5 {
+                        background-color: rgb(97, 234, 149);
+                        color: rgb(40, 119, 193);
+                        border: 2px solid black;
+                    }
+
+                    /* rule 1 you can add two selectors elements */
+                </style>
+                <span class="blue">First Tag</span>
+                <span class="blue">Second Tag</span>
+                <span class="blue">Third Tag</span>
+                <h5>
+                    <li>I also want this.</li>
+                </h5>
+                <!--  rule 2 #red or div#red both same selector match hona chaiye -->
+                <li>
+                    <p>Inline Styling will overide external and internal styles</p>
+                </li>
+                <p><-----------------------------------------------------></p>
+            </div>
+        </ul>
+    </div>
+    <div class="proceed">
+        <button><a href="http://192.168.29.215:3000/Topic%202%20(CSS).html" target="_blank">Next Topic</a></button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 2:- Colors & Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(149, 255, 255);
+            background-image: url(lxiao.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: top center; 
+            top bottom...etc */
+            background-attachment: fixed;
+            /* background: red url(lxiao.jpg) no-repeat scroll; */
+             /* avoid further css codes */
+        }
+        .proceed{
+                    position: relative;
+                    right: 60px;
+                    display: flex;
+                    justify-content: center;
+                }
+                button {
+                    background: rgb(220, 37, 5);
+                    padding: 12px 22px;
+                    border-radius: 50px;
+                    border: none;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 20px;
+                    transition: box-shadow 0.5s ease;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(238, 234, 243);
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                button:hover{
+                    background: rgb(194, 33, 5);
+                    text-decoration: underline;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+                }
+                .backward{
+                    padding-left: 82px;
+                }
+    </style>
+    <h2><u>Topic 2-Colors & Background</u></h2>
+    <ul type="square">
+        <li>
+            <p>CSS rules are simple key value pairs with a selector.</p>
+        </li>
+        <li>
+            <p>We can write CSS rules to change color and backgrounds.</p>
+        </li>
+        <div class="red">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sunt?</li>
+        </div>
+        <div class="blue">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus vitae provident fugiat
+                aperiam?
+                Explicabo quibusdam rerum in libero. Facere!</li>
+        </div>
+        <div class="green">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi ullam autem laborum reiciendis
+            doloribus accusantium, iure corporis velit. Consectetur dolorem odio non itaque corrupti.
+        </div>
+        <li>
+            <p><b>Types of Color values</b></p>
+        </li>
+    </ul>
+    <ol type="1">
+        <li>
+            <p><b>RGB:-</b> specify color using red,green,blue values eg:- <b>rgb(280,98,70)</b>,where 280 represents
+                red, 98 represents green & 70 represents blue.</p>
+        </li>
+        <li>
+            <p><b>HFX Code :-</b> Specify Color suing hex code eg:- <b>#ff7180</b></p>
+        </li>
+        <li>
+            <p><b>HSL Code:-</b>Specify the color using HSL values eg:- <b>hsl(8,90%,63%)</b></p>
+        </li>
+    </ol>
+    <ul type="square">
+        <li>
+            <p>the value of the color or background color is provided as any one of these values.</p>
+        </li>
+        <li>
+            <p> We also have an RGBA and HSLA values for color but they are rarely used by beginners, A stands for
+                Alpha.</p>
+        </li>
+    </ul>
+    <b>
+        <h3><u>Topic 2.1- Properties of CSS</u></h3>
+    </b>
+    <ul type="circle">
+        <li>
+            <p>The CSS backgound colour property specifies the background color of a container.</p>
+        </li>
+        <li>
+            <p>ex:-.red { background-color: red;}</p>
+        </li>
+        <li>
+            <p>The CSS background image property specifies the image as the background .</p>
+        </li>
+        <li>
+            <p>ex:-body{background-image:url("alhaitham.jpg")}</p>
+        </li>
+        <b>
+            <p>The Background Repeat Property</p>
+        </b>
+        <li>
+            <p>Can be any of:</p>
+        </li>
+        <li>
+            <p><b>Repeat-x :-</b> Repeat in Horizontal Direction</p>
+        </li>
+        <li>
+            <p><b>Repeat-y :-</b> Repeat in Vertical Direction</p>
+        </li>
+        <li>
+            <p><b>No-Repeat :-</b>Image not repeat</p>
+        </li>
+        <b>
+            <p>The Background-Size property</p>
+        </b>
+        <li>
+            <p>Can be following:</p>
+        </li>
+        <li>
+            <p><b>Cover:-</b> fits & no empty space requires.</p>
+        </li>
+        <li>
+            <p><b>Contain:-</b>fits & image is fully visible.</p>
+        </li>
+        <li>
+            <p><b>Auto:-</b>Display in original Size.</p>
+        </li>
+        <li>
+            <p><b>{{width}}:-</b>Set width & height will be set automatically.</p>
+        </li>
+        <b>
+            <p>The Background-Position property</p>
+        </b>
+        <li>
+            <p>Sets the starting positon of a background image.</p>
+        </li>
+        <li>
+            <p><b>Ex:-</b> body{background-position: left top;}</p>
+        </li>
+        <b>
+            <p>The Background-Attachment property</p>
+        </b>
+        <li>
+            <p>Defines a scrollable/non-scrollable Character of a backgound image.</p>
+        </li>
+        <li>
+            <p>background-attachment:fixed</p>
+        </li>
+        <b>
+            <p>The Background Shorthand</p>
+        </b>
+        <li>
+            <p>A single property to set multiple background Properties</p>
+        </li>
+        <li>
+            <p>body{background:red url() no-repeat fixed right top;}</p>
+        </li>
+        <li>
+            <p>Here <b>'Red'</b> represents Color <b>'url()'</b> represents image <b>'no-repeat'</b> represents repeat
+                of background <b>'fixed'</b> represents attachment<b>'right top'</b> represents positon.</p>
+        </li>
+        <p><-----------------------------------------------------></p>
+    </ul>
+    <div class="proceed">
+        <button><a href="http://192.168.29.215:3000/Topic%201%20(CSS).html" target="_blank">Previous Topic</a></button>
+        <div class="backward">
+            <button><a href="http://192.168.29.215:3000/Topic%203%20(CSS).html" target="_blank">Next Topic</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 4:- Display & Fonts</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #5a1b8a;
+            font-size: 17px;
+            background-image: url(./Images/novelai_sakura_trees_sunset_4k_wallpaper_by_darkprncsai_dfgj6k9-fullview.jpg);
+            background-size: cover;
+            background-image:linear-gradient(
+            90deg,
+            rgba(87, 43, 17, 0.346) 0%,
+            rgba(93, 55, 20, 0.406) 35%,
+            rgba(61, 33, 25, 0.469) 100%
+            ), 3;
+        }
+
+        .box1 {
+            background-color: rgb(252, 126, 104);
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 4px;
+            padding: 4px;
+            display: inline-block;
+        }
+
+        .box1:hover {
+            background-color: rgb(233, 83, 57);
+        }
+
+        .box2:hover {
+            background-color: rgb(11, 132, 212);
+        }
+
+        .box3:hover {
+            background-color: rgb(5, 143, 5);
+        }
+
+        .box4:hover {
+            background-color: rgb(179, 26, 26);
+        }
+
+        .box2 {
+            background-color: rgb(0, 153, 255);
+            border: 2px solid black;
+            border-radius: 7px;
+            margin-top: 7px;
+            margin-left: 4px;
+            margin-right: 48px;
+        }
+
+        .box3 {
+            background-color: rgb(6, 165, 6);
+            border: 2px solid black;
+            border-radius: 7px;
+            margin-top: 7px;
+            margin-left: 4px;
+            padding-bottom: 1px;
+            display: inline-block;
+        }
+
+        .box4 {
+            background-color: rgb(201, 25, 25);
+            border: 2px solid black;
+            border-radius: 7px;
+            margin-top: 7px;
+            margin-left: 4px;
+            padding-bottom: 1px;
+            margin-right: 604px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* avoid some css codes in case if you dont understood */
+        .proceed {
+            position: relative;
+            right: 60px;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-left: 123px;
+        }
+
+        button {
+            background: rgb(1, 40, 183);
+            padding: 12px 22px;
+            border-radius: 50px;
+            border: none;
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+            transition: box-shadow 0.5s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(238, 234, 243);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button:hover {
+            background: rgb(2, 34, 148);
+            text-decoration: underline;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .backward {
+            padding-left: 82px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <h2><u>Chapter 4- Display & Fonts</u></h2>
+    <div class="box1">
+        <ul type="square">
+            <li><b>The Display Property -</b>The CSS Display Property is used to determine whether an element is treated
+                as
+                a block/inline element & the layout used for its children<b>(flexbox/grind/etc).</b></li>
+        </ul>
+    </div>
+    <div class="box2">
+        <ol type="1">
+            <p>There are four types of CSS Display line.</p>
+            <li>
+                <p><b><u>Display:inline:-</u></b>Takes only the space required by the element. No linebreaks before and
+                    after.
+                    <b>Setting width/height not allowed & top-bottom margin padding not allowed.</b>
+                </p>
+                <p><b>* Span is By default inline element.</b></p>
+            </li>
+            <li>
+                <p><b><u>Display:block:-</u></b>Takes full space available in width and leaves a newline before and
+                    after the
+                    element.</p> <b>* Div is by default Block element.</b>
+            </li>
+            <li>
+                <p><b><u>Display:inline-block:-</u></b>Similar to inline but setting height,width,margin and padding is
+                    allowed. Elements can sit next to each other. <b>Or</b> If you want both Display at same line then
+                    you can use both display inline-block block for setting <b>Width and Height etc.</b></p>
+            </li>
+            <li>
+                <p><b><u>Display:none:-</u></b> The element is hidden from document flow. its space is not blocked.
+                    <b>it will totally remove from doc.</b></p>
+            </li>
+            <b>* In visiblity hidden the element will hidden from doc but its space will not taken.</b>
+    </div>
+    </ol>
+    <div class="box3">
+        <h3>
+            <center><u>Text-align property</u></center>
+        </h3>
+        <ul type="square">
+            <li><span>Used to set the Horizontal aligment of a text, <b>Just like Header of Topic.</b></span></li>
+            <p><b>*</b> only the text inside container or <b>div</b> will shift not toally div container.</p>
+            <h3>
+                <center><u>Text-Decoration property</u></center>
+            </h3>
+            <li><span>Used to decorate the text <b>Overline,underline,none,</b> inside CSS File</span></li>
+            <h3>
+                <center><u>Text-Transform property</u></center>
+            </h3>
+            <li>
+                <p>Used to Change the Fonts letters or Transform it like Capitilize,Lowercase,Uppercase etc.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="box4">
+        <h2>
+            <center><u>Fonts</u></center>
+        </h2>
+        <ul type="square">
+            <li><b>Fonts:-</b>Fonts play a very important role in the look and feel of a website.</li>
+            <li>
+                <p><b><u>Font-Family:-</u></b>Font family specifies tthe font of a text can hold multiple values as a
+                    fallback system.</p>
+            </li>
+            <p><b>*</b>'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',<br>
+                <b>Suppose your system didnt have any these 4 fonts or any 3 fonts etc then it will by default choose
+                    the 1 you have or none then by default it will choose default font.</b>
+            </p>
+            <li>
+                <p><b><u>Web Safe Fonts:-</u></b>Those fonts are universally installed across browsers.</p>
+            </li>
+            <li>
+                <p><b><u>Other Font Properties :-</u></b> Some of the other font properties like:-</p>
+            </li>
+            <ul type="circle"><b>
+                    <li>Font-Size</li>
+                    <li>Font-Style</li>
+                    <li>Font-Variant</li>
+                    <li>Font-Weight</li>
+                </b>
+            </ul>
+            <br>
+            <li><b>Generic Family can be considered as a group of family like Serif Serif contains many fonts like
+                    Sans-serif etc.</b></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="proceed">
+            <button><a href="http://192.168.29.215:3000/Topic%203%20(CSS).html" target="_blank">Previous
+                    Topic</a></button>
+            <div class="backward">
+                <button><a href="http://192.168.29.215:3000/Topic%205%20(CSS).html" target="_blank">Next
+                        Topic</a></button>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

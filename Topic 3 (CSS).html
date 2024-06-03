@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 3:- CSS Box Model</title>
+    <style>
+        .divclass {
+            width: 500px;
+            height: 1850px;
+            background: rgb(242, 83, 83);
+            color: black;
+            /* margin & padding in styling  */
+            margin: 14px;
+            padding: 13px;
+            border: 3px solid black;
+            /* border radius is used to add edges or cut the edges of border */
+            border-radius: 9px;
+        }
+
+        .h2 {
+            width: 300px;
+            height: 50px;
+            background-color: aqua;
+            /* top,right,bottom,left: */
+            margin: 4px 2px 4px 2px;
+            padding: 13px;
+            border: 2px solid black;
+        }
+
+        .type {
+            width: 300px;
+            height: 390px;
+            background-color: aquamarine;
+            color: black;
+            margin: 14px;
+            padding: 14px;
+            /* ways to gove border: */
+            border-width: 2px;
+            border-style: dashed solid;
+            border-color: black;
+            /* or i can use shorthand */
+            /* border: 2px dashed solid black; */
+
+        }
+
+        .margin {
+            width: 300px;
+            height: 550px;
+            background-color: rgb(0, 106, 255);
+            /* top,right,bottom,left: */
+            margin: 4px 4px 4px 4px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 7px;
+            border-style: dashed groove;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(253, 253, 253);
+            background-image: url(./Images/alhaitham.jpg);
+            background-size: cover;
+            /* or background-size: auto; */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /* avoid further css codes */
+        .proceed{
+                    position: relative;
+                    right: 60px;
+                    display: flex;
+                    justify-content: center;
+                }
+                button {
+                    background: rgb(1, 40, 183);
+                    padding: 12px 22px;
+                    border-radius: 50px;
+                    border: none;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 20px;
+                    transition: box-shadow 0.5s ease;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(238, 234, 243);
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                button:hover{
+                    background: rgb(2, 34, 148);
+                    text-decoration: underline;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+                }
+                .backward{
+                    padding-left: 82px;
+                }
+    </style>
+    <div class="divclass">
+        <div class="h2">
+            <h2><u>Topic 3- CSS Box Model</u></h2>
+        </div>
+        <ul type="star">
+            <li>
+                <p>The CSS Box Model looks at all the HTML elemnets as Boxes</p>
+            </li>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>margin</li>
+            <!-- content :- room -->
+            <!-- padding :- bricks -->
+            <!-- border :- cement -->
+            <!-- margin:- paint -->
+            <li>
+                <p>We can set width and height in CSS as follows</p>
+            </li>
+            <li>ex:- .box{
+                height: 70px;
+                width: 30px;
+                }</li>
+            <li>
+                <p>We can set Margin & Padding in CSS as follows</p>
+            </li>
+            <li>ex:- box{margin: 3px;
+                padding: 4px;
+                }
+            </li>
+            <li>
+                <p>It sets top,bottom,left,right values</p>
+            </li>
+            <li>
+                <p>.box main {7px,0px,2px,11px}</p>
+            </li>
+            <li>
+                <p> We can also write Margin Shorthand </p>
+            </li>
+            <li>
+                <p>top,right,bottom,left:</p>
+            </li>
+            <li>
+                <p>We can also set individual margins/paddings like this:</p>
+            </li>
+            <p>margin-top: 70px</p>
+            <p>margin-bottom: 3px</p>
+            <p>margin-left: 8px</p>
+            <p>margin-right: 9px</p>
+            <li>
+                <p><b>Same goes for padding</b></p>
+            </li>
+            <div class="type">
+                Example:- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, veritatis voluptate
+                distinctio quos excepturi odio vitae tempore, commodi dolorum ex ipsum praesentium impedit velit ipsam.
+                Dicta voluptatem officiis ea praesentium cupiditate incidunt recusandae, alias quo in perspiciatis sit
+                dolores consectetur, dolore quis vitae corrupti doloribus atque molestiae accusamus suscipit culpa quam!
+                Nulla nemo assumenda unde dolores sapiente velit vitae illo pariatur, iste explicabo aut deserunt.
+                Veritatis provident, maiores natus fugiat rem laboriosam, qui, impedit saepe harum delectus esse dolor
+                architecto officiis error dignissimos a est. Voluptatibus libero incidunt exercitationem, dolorum
+                voluptates iure inventore, repellat eligendi quisquam vel atque, molestiae quibusdam.
+            </div>
+            <li>
+                <p> I can also use shorthand border: 2px dashed solid black; </p>
+            </li>
+            <li>
+                <p> We can also set border radius to create rounded borders</p>
+            </li>
+            <li>
+                <p>border - radius: 9px</p>
+            </li>
+            <div class="margin">
+                <h3><u>Topic 3.1- Margin Collapse</u></h3>
+                <li>
+                    <p><b>Margin Collapse:-</b> When two margins from different elements overlap,the equivalent margin
+                        is the greater of the two. this is called Margin Collapse.</p>
+                </li>
+                <li>
+                    <p>Ex:- Suppose box1 margin contain 30px margin and box2 margin contain 30 px so box1 and box2 both
+                        will share above 30-30px margin.</p>
+                </li>
+                <li>
+                    <p>If box1 margin has 30px and box2 contain 20px then box2 will share the greater margin {30px} or
+                        box1 margin and box2 margin will Collapse.</p>
+                </li>
+                <li>
+                    <p><b>Box Sizing:-</b>Determines what out of padding and border is included in elements width and
+                        height</p>
+                </li>
+                <p>Can be Content-box or border-box</p>
+                <li>
+                    <p><b>Margin should not be included in border box if its then it will got flow from box.</b></p>
+                </li>
+                <li>
+                    <p>The Content-width and height includes Content + padding + border.</p>
+                </li>
+
+                <!-- this whole document can also be done in border-box -->
+            </div>
+    </div>
+    </ul>
+    <div class="proceed">
+        <button><a href="http://192.168.29.215:3000/Topic%202%20(CSS).html" target="_blank">Previous Topic</a></button>
+        <div class="backward">
+            <button><a href="http://192.168.29.215:3000/Topic%204%20(CSS).html" target="_blank">Next Topic</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

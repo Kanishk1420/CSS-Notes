@@ -1,0 +1,21 @@
+*{
+    margin: 10px;
+    padding: 0px;
+}
+table{
+    border: 1px groove black;
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+}
+td{
+    /* border: 1px solid black; */
+    font-size: 22px;
+    padding: 22px 22px 22px 12px;
+
+}
+tr:nth-child(odd){
+    background-color: rgb(237, 150, 8);
+}
+tr:nth-child(even){
+    background-color:rgb(72, 232, 14) ;
+}

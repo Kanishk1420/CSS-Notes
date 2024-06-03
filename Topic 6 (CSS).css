@@ -1,0 +1,114 @@
+body{
+    background-image: linear-gradient(to left, rgb(0, 110, 255),rgb(1, 226, 68));
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.heading{
+    font-weight: 700;
+    text-decoration: underline dashed;
+}
+.Heading{
+background-color:  #5154a7;
+display: inline-block;
+border: 3px solid;
+border-image: linear-gradient(to right, #2a2b4d 15%, rgb(196, 235, 5) 25%, rgb(243, 4, 91) 50%, rgb(246, 0, 0) 50%, red 65%, rgb(7, 225, 225) 75%) 5;
+font-weight: 500;
+margin-left: 10vw;
+margin-right: 10vw;
+font-size: 18px;
+padding-left: 8vh;
+padding-right: 8vh;
+text-align: center;
+font-family: "Philosopher", sans-serif;
+transition: border 0.3s ease-in;
+}
+#square{
+    padding-right: 6vw;
+}
+#rectangle{
+    padding-right: 16vw;
+}
+#circle{
+    padding-right: 12vw;
+}
+.Heading:hover{
+    background-color:  #3c3f89;
+    border: 3px solid;
+    border-image: linear-gradient(to left, #2a2b4d 15%, rgb(196, 235, 5) 25%, rgb(243, 4, 91) 50%, rgb(246, 0, 0) 50%, red 65%, rgb(6, 190, 190) 75%) 5;
+}
+img{
+    border: 2px solid black;
+    border-image:linear-gradient(
+      90deg,
+      rgba(87, 43, 17, 0.346) 0%,
+      rgba(93, 55, 20, 0.406) 35%,
+      rgba(61, 33, 25, 0.469) 100%
+    ), 3;
+    border-radius: 12px;
+    transition: box-shadow 0,4s ease-in-out; 
+}
+img:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.454);
+}
+.Flex{
+background-color:  #108066;
+display: inline-block;
+border: 3px solid;
+margin-top: 2vh;
+border-image: linear-gradient(to right, #105343 15%, rgb(196, 235, 5) 25%, rgb(243, 4, 91) 50%, rgb(246, 0, 0) 50%, red 65%, rgb(10, 85, 192) 75%) 5;
+font-weight: 500;
+margin-left: 10vw;
+margin-right: 10vw;
+font-size: 18px;
+padding-left: 4vh;
+padding-right: 6vh;
+font-family: "Philosopher", sans-serif;
+transition: border 0.3s ease-in;
+}
+.Flex:hover{
+    background-color:  #0d6852;
+    border: 3px solid;
+    border-image: linear-gradient(to left, #0e511a 15%, rgb(196, 235, 5) 25%, rgb(243, 4, 91) 50%, rgb(246, 0, 0) 50%, red 65%, rgb(8, 168, 78) 75%) 5;
+}
+.Flex h3{
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline double;
+    text-align: center;
+}
+.proceed{
+    position: relative;
+    right: 3.13vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.18vw;
+    margin-left: 6.41vw;
+}
+button {
+    background: rgb(11, 138, 4);
+    padding: 0.63vw 1.5vw;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    transition: box-shadow 0.5s ease;
+}
+a {
+    text-decoration: none;
+    color: rgb(238, 234, 243);
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    background: rgb(9, 126, 3);
+    text-decoration: underline;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.backward{
+    padding-left: 4.27vw;
+}

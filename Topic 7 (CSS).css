@@ -1,0 +1,199 @@
+*{
+    margin:  0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: fill;
+    opacity: 93%;
+    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    background-color: #410266;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 28vw;
+    margin-right: 28vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 25px;
+    text-decoration: none;
+}
+.Heading b{
+    color: #9609e8;
+}
+.Heading ul{
+    margin-left: 4.5%;
+}
+.Heading li{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 0.2vh;
+    list-style:decimal; 
+    
+}
+.Heading{
+    background-color: #f0ecfe;
+    color: #a464f9;
+    display: flex;
+    justify-content: center;
+    margin-left: 28vw;
+    margin-right: 28vw;  
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 19px;
+    border: 2px solid black;
+    margin-bottom: 3vh;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.Heading:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.454);
+}
+.rules:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.454);
+}
+.media:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.454);
+}
+.Rules{
+    display: flex;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    background-color: #036227;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 20px;
+}
+.rules b{
+    color: #08a941;
+}
+.rules ul{
+    margin-left: 4.5%;
+}
+.rules li{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 1.2vh;
+    list-style:decimal;
+}
+.rules h4{
+    font-size: 20px;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+.rules{
+    background-color: #a6fad0;
+    color: #34e168;
+    margin-left: 22vw;
+    margin-right: 22vw;  
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 19px;
+    border: 2px solid black;
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+.Media{
+    display: flex;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    background-color: #a00707;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 22vw;
+    margin-right: 22vw;
+    margin-top: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 20px;
+}
+.media b{
+    color: #a90813;
+}
+.media ul{
+    margin-left: 4.5%;
+}
+.media li{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 1.2vh;
+    list-style:decimal;
+}
+.media{
+    background-color: #faa6a6;
+    color: #e13434;
+    margin-left: 22vw;
+    margin-right: 22vw;  
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 19px;
+    border: 2px solid black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.proceed{
+    position: relative;
+    right: 3.13vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.08vw;
+    margin-left: 6.41vw;
+}
+button {
+    background: rgb(7, 116, 226);
+    padding: 0.63vw 1.15vw;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.04vw;
+    transition: box-shadow 0.5s ease;
+}
+a {
+    text-decoration: none;
+    color: rgb(238, 234, 243);
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    background: rgb(5, 94, 182);
+    text-decoration: underline;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.backward{
+    padding-left: 4.27vw;
+}
