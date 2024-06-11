@@ -180,7 +180,7 @@ button {
     border: none;
     color: white;
     font-weight: 500;
-    font-size: 1.04vw;
+    font-size: 20px;
     transition: box-shadow 0.5s ease;
 }
 a {
@@ -196,4 +196,28 @@ button:hover{
 }
 .backward{
     padding-left: 4.27vw;
+}
+@media only screen and (max-width: 600px) {
+    .Heading li{
+        margin-left: 2.7vw;
+        margin-bottom: 4vh;       
+    }
+    .rules li{
+        margin-left: 2.7vw; 
+    }
+    .media li{
+        margin-left: 2.7vw;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .Heading li{
+        margin-left: 1.4vw;
+        margin-bottom: 4vh;       
+    }
+    .rules li{
+        margin-left: 1.4vw; 
+    }
+    .media li{
+        margin-left: 1.4vw;
+    }
 }

@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+nav{
+    background-image: url(./Images/Launchpad.png);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+}
+.content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.meteor{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    animation: meteorAnim-099f6e6b 6s cubic-bezier(0.53, -0.05, 0.90, 1.16) infinite;
+    background-image: url(./Images/download.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes meteorAnim-099f6e6b {
+    0%{
+        top:-130px;
+        left:900px;
+    }
+    100% {
+    top: 900px;
+    left: -130px;
+}
+}
+.meteor1{
+    position: absolute;
+    width: 134px;
+    height: 133px;
+    animation: meteorAnim1-099f6e6b 6s linear infinite;     
+    background: url(./Images/download1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes meteorAnim1-099f6e6b {
+    0%{
+        top: -134px;
+        left: 600px;
+    }
+    100%{
+        top: 600px;
+        left: -134px;
+    }
+}
+.meteor2{
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    animation: meteorAnim2-099f6e6b 4.6s linear infinite;
+    animation-delay: 2.8s;
+    background: url(./Images/download2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes  meteorAnim2-099f6e6b {
+    0%{
+        top: -116px;
+        left: 750px;
+    }
+    100%{
+        top: 750px;
+        left: -116px;
+    }
+}
+.bg1{
+    position: absolute;
+    top: -250px;
+    left: -150px;
+    width: 750px;
+    height: 750px;
+    background: url(./Images/download3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.meteor3{
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    animation: meteorAnim2-099f6e6c 5s linear infinite;
+    background: url(./Images/download2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes meteorAnim2-099f6e6c{
+    0%{
+        top: -116px;
+        left: 450px;
+    }
+    100%{
+        top: 450px;
+        left: -116px;
+    }
+}
+.bg2{
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: url(./Images/lanch_bg1.71f10b54.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.bg3{
+    position: absolute;
+    top: 330px;
+    right: -300px;
+    width: 720px;
+    height: 720px;
+    animation: spin-099f6e6b 13s linear infinite;
+    background: url(./Images/lanch_bg3.dcabc16f.png);
+}
+@keyframes spin-099f6e6b{
+    0% {
+        transform: rotate(1turn);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.heading{
+    font-family: Tinos;
+    font-weight: 700;
+    margin-top: 1.0vh;
+    padding: 8px 2px 8px 2px;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 35vw;
+    margin-right: 30vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 29px;
+    border: 1px transparent;
+    border-radius: 20px;
+    background: linear-gradient(to right, #c3edc6,#8ec899,#c3edc6);
+    color: #333550;
+    transition: box-shadow 0.6s ease-out;
+    position: relative;
+}
+.heading:hover{
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.154);
+}
+.heading:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 12px;
+    left: 0;
+    margin-left: 0.6vw;
+    background-color: #333550;
+    transition: 0.7s ease-out;
+}
+.heading:hover::after{
+    width: 96%;
+    transform: scaleX(1);
+}
+.Heading b{
+    color: #196632;
+}
+.Heading ul{
+    margin-left: 4.5%;
+}
+.Heading ol{
+    margin-left: 4.5%;
+}
+.Heading li{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.Heading li::marker{
+    color: #196632;
+}
+.Heading{
+    background: linear-gradient(to right, #d0efd2,#8ec899,#ceebd0);
+    display: inline-block;
+    margin-top: 1vh;
+    margin-left: 28vw;
+    margin-right: 28vw;  
+    border: 2px transparent;
+    border-radius: 22px;
+    font-size: 19px;
+    margin-bottom: 3vh;
+    transition: box-shadow 0.3s ease-in-out;
+    color: #14141f;
+
+}
+.Heading:hover{
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.154);
+}
+.Heading b:hover{
+transition: underline 1s ease-out;
+text-decoration: 2px underline ;
+}
+.D{
+    text-align: center;
+    margin-bottom: 1.5vh;
+    margin-top: 0.3vh;
+    color: #333550;
+     position: relative;
+}
+.D:after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333550;
+    transition: 0.7s ease-out;
+    margin-left: 15.5vw;
+}
+.D:Hover::after{
+    width: 40%;
+    transform: scaleX(1);
+}
+.P{
+    margin-left: 2.4vw;
+    color: #000000;
+    margin-bottom: 0.6vh;
+}
+ol li::marker{
+    font-weight: 600;
+}
+h3{
+    position: relative;
+    color: #333550;
+}
+h3:after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333550;
+    transition: 0.7s ease-out;
+    margin-left: 20.2vw;
+}
+h3:hover:after{
+    width: 20%;
+    transform: scaleX(1);
+}
+.div { 
+    margin-left: 1.0vw;
+    color: #000000;
+    margin-bottom: 0.6vh;
+}
+
+.dif{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #196632;
+    transition: underline 0.7s ease-out 1s;    
+    }
+ .dif:hover{
+    text-decoration: underline;
+}
+.sif{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1vh;
+    font-size: 21px;
+}
+.box3 li {
+    display: flex;
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.606);
+    opacity: 80%;
+}
+.box2 {
+    background-color: rgba(166, 166, 166, 0.619);
+    width: 50vw;
+    height: 3vh; 
+    border: 2px solid rgba(0, 0, 0, 0.712);
+    border-radius: 12px;
+}
+.box3 {
+    width: 50vw; 
+    background: linear-gradient(to right, #73cb83, #b0ebb4, #73cb83);
+    border-radius: 12px;
+    height: 3vh; 
+    animation: anim346 6s ease-in 1s infinite alternate-reverse;
+    display: flex;
+    flex-direction: row;
+    gap: 5.5vw;
+}
+
+
+  @keyframes anim346 {
+    from {
+        width: 0.5vw;
+      }
+      to {
+        width: 50vw;
+      }
+    }
+    .containe{
+        display: flex;
+        height: 3%;
+        justify-content: center;
+    }
+@media only screen and (max-width: 600px) {
+    .heading {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .Heading {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .Heading ol{
+        margin-left: 7.5%;
+    }
+    .Heading ul{
+        margin-left: 7.5%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .heading {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    .Heading {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    .Heading ol{
+        margin-left: 6.5%;
+    }
+    .Heading ul{
+        margin-left: 6.5%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .heading {
+        margin-left: 35vw;
+        margin-right: 30vw;
+    }
+    .Heading {
+        margin-left: 28vw;
+        margin-right: 28vw;
+    }
+   
+}
+.proceed{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    gap: 3vw;
+}
+button {
+    background: linear-gradient(90.67deg, #03e5bc, #8000ff);
+    padding: 0.63vw 1.5vw;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    transition: box-shadow 0.5s ease;  
+}
+a {
+    text-decoration: none;
+    color: rgb(238, 234, 243);
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    background: linear-gradient(90.67deg, #03b998, #6502c7);
+    text-decoration: underline;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+

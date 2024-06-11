@@ -6,6 +6,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    /* overflow: hidden; */
 }
 .heading{
     font-weight: 700;
@@ -112,3 +113,43 @@ button:hover{
 .backward{
     padding-left: 4.27vw;
 }
+/* ignore last codes */
+@media only screen and (max-width: 600px) {
+    .Heading {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    img{
+        margin-left: 3vw;
+    }
+    .proceed {
+        right: 1vw;
+        margin-left: 2vw;
+    }
+   
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .Heading {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .proceed {
+        right: 2vw;
+        margin-left: 4vw;
+    }
+   
+}
+
+@media only screen and (min-width: 1025px) {
+    .Heading{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .proceed {
+        right: 3.13vw;
+        margin-left: 6.41vw;
+    }
+
+}
+

@@ -88,3 +88,17 @@ button:hover{
 .backward{
     padding-left: 82px;
 }
+/* ignore the last codes */
+@media only screen and (max-width: 600px) {
+    .Heading, .types, .height, .Position {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .Heading, .types, .height, .Position {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
